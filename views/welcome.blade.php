@@ -3,19 +3,15 @@
 @section('title', 'Halo kamu!')
 
 @section('section')
-   <div class="mb-5">
-      @for ($i = 0; $i < 10; $i++)
-         @if ($i % 2 == 0)
-            <p>Kamu Jelek 😋</p>
-         @else
-            <p>Kamu Ganteng 😎</p>
-         @endif
-      @endfor
-   </div>
+   @for ($i = 0; $i < 10; $i++)
+      @if ($i % 2 == 0)
+         <p>Kamu Jelek 😋</p>
+      @else
+         <p>Kamu Ganteng 😎</p>
+      @endif
+   @endfor
 
-   <h1 class="fs-3 text-uppercase fw-bold mb-3">Data-data Pelawak</h1>
-
-   <table class="table text-white">
+   <table class="table">
       <thead>
          <tr>
             <th scope="col">#</th>
